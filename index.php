@@ -18,7 +18,7 @@
         <div class="logo">
             <img src="images/E-logo.png" alt="">
             <div class="line"></div>
-            <p>SKYLINE</p>
+            <p>SKYLINE </p>
         </div>
 
         <div class="logo-space">
