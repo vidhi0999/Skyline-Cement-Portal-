@@ -1,4 +1,3 @@
-/* Import Google font - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 * {
   margin: 0;
@@ -6,27 +5,169 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-body {
-  min-height: 100vh;
+.header {
+  box-shadow: #6379b5 0px 3px 8px;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: -webkit-linear-gradient(left, white, #6379b5);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding-left: 2rem; */
+}
+
+.header img {
+  height: 2.5rem;
+}
+
+.logo p {
+  padding-top: 0.5rem;
+  font-size: 1.4rem;
+  color: #000839;
+  padding-left: 0.3rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding-left: 1rem; */
+}
+
+.header img {
+  height: 4rem;
+}
+
+.logo p {
+  font-size: 1.4rem;
+  color: #000839;
+}
+
+.main {
+  min-height: 95vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px;
   background: #f0faff;
 }
+
 .wrapper {
   position: relative;
-  max-width: 470px;
+  max-width: 650px;
   width: 100%;
   border-radius: 12px;
-  padding: 20px 30px 120px;
+  padding: 25px 45px 120px;
   background: #6379b5;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
+
+/* SIGNUP FORM */
+.content form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box {
+  margin-bottom: 10px;
+  width: calc(100% / 2 - 5px);
+}
+
+form .input-box input {
+  height: 50px;
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  border-radius: 8px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 3px;
+  transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+  border-color: #2c2b2d;
+}
+
+form .gender-details .gender-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+form .category {
+  display: flex;
+  margin: 10px 0;
+  justify-content: space-between;
+}
+form .category label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding-right: 200px;
+}
+form .category label .dot {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two {
+  background: #71b7e6;
+  border-color: #d9d9d9;
+}
+form input[type="radio"] {
+  display: none;
+}
+form .button {
+  height: 45px;
+}
+form .button input {
+  height: 50px;
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  border-radius: 8px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+form .button input:hover {
+  border-radius: 8px;
+  background-color: rgb(255, 250, 250);
+  border: 1px solid #2c2b2d;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* css for login form */
 .form.login {
   position: absolute;
   left: 50%;
-  bottom: -86%;
+  bottom: -89%;
   transform: translateX(-50%);
   width: calc(100% + 220px);
   padding: 20px 140px;
@@ -40,6 +181,7 @@ body {
   border-radius: 35%;
   box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
 }
+
 .form header {
   font-size: 30px;
   text-align: center;
@@ -67,7 +209,7 @@ form input {
   height: 60px;
   outline: none;
   border: none;
-  padding: 0 15px;
+  padding: 0px 20px;
   font-size: 16px;
   font-weight: 400;
   color: #333;
