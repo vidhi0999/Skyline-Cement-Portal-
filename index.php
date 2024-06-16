@@ -18,7 +18,7 @@
         <div class="logo">
             <img src="images/E-logo.png" alt="">
             <div class="line"></div>
-            <p>SKYLINE </p>
+            <p>SKYLINE</p>
         </div>
 
         <div class="logo-space">
@@ -54,8 +54,8 @@
 
     <!-- footer -->
     <footer>
-        <p>Copyright © OnlineEdu- 2023</p>
-        <p>Contact us: onlineedu12@gmail.com </p>
+        <p>Copyright © skyline- 2023</p>
+        <p>Contact us: skyline@gmail.com </p>
     </footer>
     hello
 </body>
